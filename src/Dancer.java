@@ -13,4 +13,28 @@ public class Dancer extends Person{
         System.out.println(getName()+" is dancing");
     }
 
+    public Dancer(String name, String designation, String groupName) {
+        super(name, designation);
+        this.groupName = groupName;
+    }
+
+
+    public Dancer() {
+
+    }
+
+    @Override
+    public void Learn() {
+        System.out.println(getName()+" is learning");
+    }
+
+    @Override
+    public void walk() {
+        System.out.println(getName()+" is walking");
+    }
+
+    @Override
+    public void eat() {
+        System.out.println(getName()+" is eating");
+    }
 }

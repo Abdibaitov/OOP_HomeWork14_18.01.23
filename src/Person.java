@@ -36,4 +36,12 @@ public class Person {
     public void eat(){
         System.out.println(getName()+" is eating");
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", designation='" + designation + '\'' +
+                '}';
+    }
 }

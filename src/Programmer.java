@@ -5,6 +5,14 @@ public class Programmer extends Person {
         return companyName;
     }
 
+    public Programmer(String name, String designation, String companyName) {
+        super(name, designation);
+        this.companyName = companyName;
+    }
+
+    public Programmer() {
+    }
+
     public void setCompanyName(String companyName) {
         this.companyName = companyName;
     }
@@ -12,22 +20,25 @@ public class Programmer extends Person {
         System.out.println(getName()+ "is coding");
     }
 
-    public Programmer(String name, String designation) {
-        super(name, designation);
-    }
-
     @Override
     public void Learn() {
-        super.Learn();
+        System.out.println(getName()+" is learning");
     }
 
     @Override
     public void walk() {
-        super.walk();
+        System.out.println(getName()+" is walking");
     }
 
     @Override
     public void eat() {
-        super.eat();
+        System.out.println(getName()+" is eating");
+    }
+
+    @Override
+    public String toString() {
+        return "Programmer{" +
+                "companyName='" + companyName + '\'' +
+                '}';
     }
 }

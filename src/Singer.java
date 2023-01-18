@@ -16,4 +16,29 @@ public class Singer extends Person{
     public void PlayGitar(){
         System.out.println(getName()+" is playing gitar");
     }
+
+    @Override
+    public void Learn() {
+        System.out.println(getName()+" is singing");
+    }
+
+    @Override
+    public void walk() {
+        System.out.println(getName()+" is walking");
+    }
+
+    @Override
+    public void eat() {
+        System.out.println(getName()+" is eating");
+    }
+
+    public Singer(String name, String designation, String bandName) {
+        super(name, designation);
+        this.bandName = bandName;
+
+    }
+
+    public Singer() {
+
+    }
 }
